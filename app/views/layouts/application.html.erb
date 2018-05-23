@@ -23,7 +23,7 @@
       <div class="col-4 slogan">
         Slowing down your production at work, one joke at a time.
       </div>
-       <div class="col-5 links">
+      <div class="col-5 links">
         <%= link_to 'Contribute', '#' %>
         <%= link_to 'About', '#' %>
       </div>
@@ -33,7 +33,25 @@
 
     <br class="clear" />
 
-   <%= yield %>
+    <div class="container">
+
+      <%= yield %>
+
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+          </div>
+          <div class="col-6 footer-blurb">
+          Pieced together in Sacramento by <a href="http://thefirehoseproject.com">Randy</a><br />
+          I'm learning to build my own Splurty Web App - <a href="http://thefirehoseproject.com">You can, too.</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </body>
 </html>
