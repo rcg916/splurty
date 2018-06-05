@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :quotes
   resources :contacts
   get 'about', to: 'quotes#about'
+  get 'new_contact', to: 'contacts#new'
 end
